@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Memories 📸</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="collage-body">
+
+    <!-- Container for dynamic floating balloons -->
+    <div class="balloon-container" id="balloonSpace"></div>
+
+    <div id="page2">
+        <a href="index.html" class="btn nav-back">⬅ Back</a>
+        
+        <div class="collage-grid">
+            <!-- Replace these placeholder URLs with your local files: e.g., image1.jpg -->
+            <div class="polaroid p1"><img src="S1.jpg" alt="Memory 1"></div>
+            <div class="polaroid p2"><img src="S2.jpg" alt="Memory 2"></div>
+            <div class="polaroid p3"><img src="S3.jpg" alt="Memory 3"></div>
+
+            <div class="polaroid p4"><img src="S4.jpg" alt="Memory 4"></div>
+            
+            <div class="center-note">Happiest<br>Birthday</div>
+
+            <div class="polaroid p5"><img src="S5.jpg" alt="Memory 5"></div>
+
+            <div class="polaroid p6"><img src="S6.jpg" alt="Memory 6"></div>
+            <div class="polaroid p7"><img src="S7.jpg" alt="Memory 7"></div>
+            <div class="polaroid p8"><img src="S8.jpg" alt="Memory 8"></div>
+        </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Trigger page multiplier explosion when the album loads
+        window.addEventListener('DOMContentLoaded', () => {
+            startPassiveBalloons();
+            triggerConfetti();
+            triggerMultiplier(15);
+        });
+    </script>
+</body>
+</html>

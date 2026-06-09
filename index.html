@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday! ✨</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Container for dynamic floating balloons -->
+    <div class="balloon-container" id="balloonSpace"></div>
+
+    <div id="page1">
+        <div class="container">
+            <h1>Happy Birthday! 🎂</h1>
+            <p>Wishing you a beautiful day filled with love and laughter. Click below to unwrap your gifts!!</p>
+            
+            <button class="btn" onclick="revealMessage()">Open Letter 🎁</button>
+            <!-- Navigates directly to the second HTML file -->
+            <a href="collage.html" class="btn btn-link">View Freeze Moment 📸</a>
+            
+            <div class="secret-message" id="birthdayMessage">
+                "Cheers to another year of amazing memories together! 
+                Wishing you Happiest Birthday My Best friend I wish you ✨ your Dark Days revamping to Glorious Days ✨ 
+                Unaku ena thonutho ahtha panu kandipa ✨Happie-ness Kedakum✨." ✨💖
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Trigger specific animations unique to Page 1 load
+        window.addEventListener('DOMContentLoaded', () => {
+            startPassiveBalloons();
+        });
+    </script>
+</body>
+</html>
